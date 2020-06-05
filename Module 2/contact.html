@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8377c9f2ae.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contact</title>
+</head>
+
+<body>
+        <nav>
+          <input type="checkbox" id="check">
+           <img src ="lll.png" class="logo" alt="">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars" id ="mobile_menu" onclick="myFunction(event)"></i>
+            </label>
+            <ul>
+                <li>
+                    <a  href="index.html">Home</a>
+                </li>
+                <li>
+                    <a  href="about.html">About</a>
+                </li>
+                <li>
+                    <a class ="contact active" href="contact.html">Our Entertainment </a>
+                </li>
+            </ul>
+      
+        </nav>
+        <h1 class="text-center">Our Entertainment </h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <section class="playstation">
+                <h2><i class="fab fa-playstation"></i></i> playstation</h2>
+                <p>
+                  PlayStation (Japanese: プレイステーション, Hepburn: Pureisutēshon, officially abbreviated as PS) is a video game brand that consists of four home video game consoles, as well as a media center, an online service, a line of controllers, two handhelds and a phone, as well as multiple magazines. The brand is produced by Sony Interactive Entertainment, a division of Sony, with the first console releasing as the PlayStation in Japan released in December 1994, and worldwide the following year.
+                </p>
+                </section>
+            </div>
+             <div class="col-lg-4 col-md-6 col-sm-12">
+            <section class="Xbox">
+                <h2><i class="fab fa-xbox"></i> Xbox</h2>
+                <p>
+                  Xbox is a video gaming brand created and owned by Microsoft. It represents a series of video game consoles developed by Microsoft, with three consoles released in the sixth, seventh, and eighth generations, respectively. The brand also represents applications (games), streaming services, an online service by the name of Xbox Live, and the development arm by the name of Xbox Game Studios. The brand was first introduced in the United States in November 2001, with the launch of the original Xbox console.
+                </p>
+            </section>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+            <section class="Gaming-PC">
+                <h2><i class="fas fa-desktop"></i> Gaming-PC </h2>
+                <p>
+                 A gaming computer, also known as a gaming PC or gaming rig, is a personal computer designed for playing video games that require a high amount of computing power thus making gaming much smoother and easier. A modern gaming computer is comparable to a mainstream computer with the addition of performance-oriented components, such as high-performance video cards and high core-count central processing units, that sacrifice power efficiency for raw performance
+                </p>                </section>
+            </div>
+        </div>
+    </body>
+    
+
+    <div id="footer">
+<footer>&copy; Copyright 2020 By Ahmed Lahham  </footer>
+</div>
+
+       <script>
+
+    var x=1;
+    
+    function myFunction(event) { 
+        
+    if(document.getElementById("mobile_menu"))
+    {
+     
+       x++;
+       console.log(x);
+       if(x == 2)
+       {
+       document.querySelector("h1").style.marginTop= "210px";
+       }
+       if(x==3)
+       {
+          document.querySelector("h1").style.marginTop= "0px";
+          x=1;
+       }
+       
+       
+    }
+    
+    else{
+    
+        return;
+       
+    }
+    
+    }
+     </script>
+    
+    
+</body>
+</html>
